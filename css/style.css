@@ -1,0 +1,147 @@
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+}
+
+html{
+	font-size: 93.75%; /*15px*/
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    max-width: 2080px;
+}
+
+h1, h2, h3, h4{
+    font-family:'Poppins', sans-serif;
+}
+
+p, a{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    width: 85vw;
+}
+/*#################### HEADER ##################### */
+header{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    padding-block: 4rem;
+    background-color: var(--purple-bg);
+    border-bottom: 0.4rem solid var(--green);
+}
+
+header>nav{
+    display: flex;
+    
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+}
+
+nav>ul{
+    display: flex;
+}
+
+nav>ul li{
+    padding-inline: 1.5rem;
+}
+
+ul> li a{
+    font-size: 1.1rem;
+    color: var(--light-purple);
+    opacity: 0.8;
+
+}
+
+#home ul .home,
+#sobre ul .sobre
+{
+    border-left: 3px solid var(--green);
+    padding-left: 2px;
+    color: var(--white);
+    opacity: 1;
+}
+
+form{
+    display: flex;
+}
+
+form input{
+    outline-style: none;
+    height: 2.5rem;
+    width: 14rem;
+    color: var(--light-purple);
+    padding-left: 1rem;
+    background-color: #170027;
+    border: none;
+}
+
+form button{
+    outline-style: none;
+    border: none;
+    width: 4rem;
+    background-color: var(--button-bg);
+}
+#container_header{
+    display: grid;
+    
+    grid-template-areas: "section figure";
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    margin-top: 3rem;
+}
+
+section{
+    grid-area: section;
+    position: relative;
+}
+
+section h1{
+    color: var(--button-bg);
+    font-size: 2.2rem;
+    text-align: left;
+    margin: 0px;
+}
+
+section>p{
+    color: var(--light-purple);
+    opacity: 0.8;
+    font-size: 1.2rem;
+    margin-block: 2rem;
+}
+
+div>figure{
+    margin: 0px;
+    
+    grid-area: figure;
+}
+
+div#seemore{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+
+div#seemore a{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: var(--button-bg);
+}
+
+div#seemore .svg{
+    padding-left: 1rem;
+}
+
