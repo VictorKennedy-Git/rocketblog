@@ -186,12 +186,14 @@ aside div:nth-child(-n+2){
 }
 
 /*################## Footer ####################### */
-footer{
+footer.container{
     display: grid;
     grid-template-areas: 
     'Card1 Card2 Card3'
     ;
     grid-gap: 2rem;
+
+    margin-bottom: 3rem;
 }
 
 footer>div img{
